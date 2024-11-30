@@ -84,4 +84,6 @@ public class LaptopDao {
 		
 		return laptopRepository.findAll(PageRequest.of(pagenumber, pagesize));
 	}
+	
+	
 }

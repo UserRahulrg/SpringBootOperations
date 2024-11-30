@@ -9,8 +9,18 @@ import com.infosys.spring_boot_operation.dao.LaptopDao;
 import com.infosys.spring_boot_operation.object.Laptop;
 import com.infosys.spring_boot_operation.repository.LaptopRepository;
 
+/* Notes
+ * 
+ * @RestControllerAdvice
+ * nativeQuery,jpql query
+ * @RestController
+ * @Query
+ * 
+ * */
 
 @RestController
+@CrossOrigin(origins="http://localhost:5173")
+@RequestMapping(value="laptopController")
 public class LaptopController {
 	
 	@Autowired
@@ -99,4 +109,8 @@ public class LaptopController {
 		return laptopDao.displayPageByPaginationDao(pagesize, pagenumber);
 	}
 	
+	/*
+	@PutMapping(value="/")
+	public 
+	*/
 }
