@@ -31,12 +31,11 @@ public class LaptopController {
 		
 		System.out.println(laptop);
 		return laptop;
-		
+	
 }
 	
 	@Autowired
 	LaptopDao laptopDao;
-	
 	
 	@RequestMapping("/saveLaptop" /*method=Request.GET*/)
 	public Laptop saveLaptopController(@RequestBody Laptop laptop) {
