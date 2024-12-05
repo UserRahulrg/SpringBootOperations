@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import org.springframework.stereotype.Component;
 
+//import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
@@ -27,6 +29,7 @@ public class Laptop implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
+	//@JsonProperty(value="id")
 	private int id;
 	private String name;
 	private String color;

@@ -37,7 +37,7 @@ public class LaptopController {
 	@Autowired
 	LaptopDao laptopDao;
 	
-	@RequestMapping("/saveLaptop" /*method=Request.GET*/)
+	@PostMapping("/saveLaptop" /*method=Request.GET*/)
 	public Laptop saveLaptopController(@RequestBody Laptop laptop) {
 		
 		return laptopDao.saveLaptopDao(laptop);
