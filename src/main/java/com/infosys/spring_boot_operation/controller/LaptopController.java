@@ -11,6 +11,9 @@ import com.infosys.spring_boot_operation.repository.LaptopRepository;
 
 /* Notes
  * 
+ * Important Topics
+ * 
+ * 
  * @RestControllerAdvice
  * nativeQuery,jpql query
  * @RestController
