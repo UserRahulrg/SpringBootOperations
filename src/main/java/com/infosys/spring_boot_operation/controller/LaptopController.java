@@ -52,6 +52,12 @@ public class LaptopController {
 		return laptopDao.getLaptopByIdDao(id);
 	}
 	
+	@GetMapping(value="/getLaptopById/{a}")
+	public Laptop getLaptopByIdController2(@PathVariable("a") Integer id) {
+		
+		return laptopDao.getLaptopByIdDao(id);
+	}
+	
 	@GetMapping(value="/getAllLaptop")
 	public List<Laptop> getAllLaptopController(){
 		
