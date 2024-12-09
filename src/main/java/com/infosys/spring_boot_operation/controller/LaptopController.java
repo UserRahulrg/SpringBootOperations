@@ -95,12 +95,15 @@ public class LaptopController {
 		
 		List<Laptop> laptops = laptopDao.getLaptopByColor(color);
 		
+		
 		if(!(laptops.isEmpty())) {
 			
 			return laptops;
 		}
 		else {
 			return null;
+		
+		
 		}
 	}
 	
