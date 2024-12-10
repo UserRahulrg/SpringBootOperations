@@ -43,11 +43,13 @@ public class LaptopController {
 	@PostMapping("/saveLaptop" /*method=Request.GET*/)
 	public Laptop saveLaptopController(@RequestBody Laptop laptop) {
 		
+		
 		return laptopDao.saveLaptopDao(laptop);
 	}
 	
 	@PostMapping(value="/getLaptopById/{a}")
 	public Laptop getLaptopByIdController(@PathVariable("a") Integer id) {
+		
 		
 		return laptopDao.getLaptopByIdDao(id);
 	}
@@ -55,11 +57,13 @@ public class LaptopController {
 	@GetMapping(value="/getLaptopById/{a}")
 	public Laptop getLaptopByIdController2(@PathVariable("a") Integer id) {
 		
+		
 		return laptopDao.getLaptopByIdDao(id);
 	}
 	
 	@GetMapping(value="/getAllLaptop")
 	public List<Laptop> getAllLaptopController(){
+		
 		
 		return laptopRepository.findAll();
 	}
