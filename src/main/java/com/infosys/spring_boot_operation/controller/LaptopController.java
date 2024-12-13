@@ -29,6 +29,7 @@ public class LaptopController {
 	@Autowired
 	LaptopRepository laptopRepository;
 	
+	
 	@PostMapping(value="/saveLaptops")
 	public Laptop saveLaptopControllers(@RequestBody Laptop laptop) {
 		
@@ -81,6 +82,7 @@ public class LaptopController {
 		return true;
 	}
 
+	
 	private Laptop getLaptopByIdDao(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
