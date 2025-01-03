@@ -44,13 +44,11 @@ public class LaptopController {
 	@PostMapping("/saveLaptop" /*method=Request.GET*/)
 	public Laptop saveLaptopController(@RequestBody Laptop laptop) {
 		
-		
 		return laptopDao.saveLaptopDao(laptop);
 	}
 	
 	@PostMapping(value="/getLaptopById/{a}")
 	public Laptop getLaptopByIdController(@PathVariable("a") Integer id) {
-		
 		
 		return laptopDao.getLaptopByIdDao(id);
 	}

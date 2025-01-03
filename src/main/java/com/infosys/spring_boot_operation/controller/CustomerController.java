@@ -32,7 +32,7 @@ public class CustomerController {
 	@PostMapping(value="/saveLaptop2")
 	public Laptop saveLaptopController(@RequestBody Laptop laptop) {
 		
-		System.out.println(laptop);
+		//System.out.println(laptop);
 		return laptop;
 		
 		
