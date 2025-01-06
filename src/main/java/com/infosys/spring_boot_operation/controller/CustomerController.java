@@ -35,6 +35,12 @@ public class CustomerController {
 		return "Multiplication of two Number: "+(c*d);
 	}
 	
+	@GetMapping(value="/subtrOfTwoNumber/{c}/{d}")
+	public String subtractionOfTwoNumber(@PathVariable int e,@PathVariable int f) {
+		
+		return "Subtraction of two Number: "+(e-f);
+	}
+	
 	@PostMapping(value="/saveLaptop2")
 	public Laptop saveLaptopController(@RequestBody Laptop laptop) {
 		
